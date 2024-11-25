@@ -42,7 +42,7 @@ function renderActive(text: string, href: string, active: boolean) {
 }
 
 function getIndexFile(files: FileTree<IndexFile>): File<IndexFile> | undefined {
-  return files.find(e => e.type === "file" && e.value.text === "index") as File<
+  return files.find(e => e.type === "file" && e.value.text === "readme") as File<
     IndexFile
   >; // Stupid TS
 }
